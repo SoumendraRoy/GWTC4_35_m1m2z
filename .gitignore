@@ -1,3 +1,10 @@
+# Ignore heavy output/data files
+*.h5
+*.hdf5
+*.out
+*.err
+*.log
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
