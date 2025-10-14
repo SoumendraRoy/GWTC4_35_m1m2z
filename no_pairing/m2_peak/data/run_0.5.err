@@ -1,0 +1,135 @@
+  Activating project at `~/GWTC4_35_m1m2z/no_pairing/m2_peak`
+Precompiling BumpCosmologyGWTC3...
+    BumpCosmologyGWTC3 Being precompiled by another process (pid: 48046, pidfile: /mnt/home/sroy1/.julia/compiled/v1.11/BumpCosmologyGWTC3/Y6sZo_ZiJYF.ji.pidfile)
+  11926.0 ms  ✓ BumpCosmologyGWTC3
+  1 dependency successfully precompiled in 30 seconds. 527 already precompiled.
+[ Info: Could not read IGWN-GWTC2p1-v2-GW190425_081805_PEDataRelease_mixed_nocosmo.h5
+Loading IGWN HDF5 Files   2%|▋                           |  ETA: 0:01:39Loading IGWN HDF5 Files   3%|█                           |  ETA: 0:01:57Loading IGWN HDF5 Files   5%|█▎                          |  ETA: 0:01:55Loading IGWN HDF5 Files   6%|█▋                          |  ETA: 0:01:55Loading IGWN HDF5 Files   7%|██                          |  ETA: 0:01:41Loading IGWN HDF5 Files   8%|██▎                         |  ETA: 0:01:32Loading IGWN HDF5 Files   9%|██▋                         |  ETA: 0:01:30Loading IGWN HDF5 Files  10%|██▉                         |  ETA: 0:01:29Loading IGWN HDF5 Files  12%|███▎                        |  ETA: 0:01:29Loading IGWN HDF5 Files  13%|███▋                        |  ETA: 0:01:32Loading IGWN HDF5 Files  14%|███▉                        |  ETA: 0:01:28Loading IGWN HDF5 Files  15%|████▎                       |  ETA: 0:01:31Loading IGWN HDF5 Files  16%|████▌                       |  ETA: 0:01:27Loading IGWN HDF5 Files  17%|████▉                       |  ETA: 0:01:27Loading IGWN HDF5 Files  19%|█████▎                      |  ETA: 0:01:27Loading IGWN HDF5 Files  20%|█████▌                      |  ETA: 0:01:25Loading IGWN HDF5 Files  21%|█████▉                      |  ETA: 0:01:26Loading IGWN HDF5 Files  22%|██████▏                     |  ETA: 0:01:25Loading IGWN HDF5 Files  23%|██████▌                     |  ETA: 0:01:21Loading IGWN HDF5 Files  24%|██████▉                     |  ETA: 0:01:19Loading IGWN HDF5 Files  26%|███████▏                    |  ETA: 0:01:17Loading IGWN HDF5 Files  27%|███████▌                    |  ETA: 0:01:16Loading IGWN HDF5 Files  28%|███████▉                    |  ETA: 0:01:14Loading IGWN HDF5 Files  29%|████████▏                   |  ETA: 0:01:16Loading IGWN HDF5 Files  30%|████████▌                   |  ETA: 0:01:13Loading IGWN HDF5 Files  31%|████████▊                   |  ETA: 0:01:12Loading IGWN HDF5 Files  33%|█████████▏                  |  ETA: 0:01:12Loading IGWN HDF5 Files  34%|█████████▌                  |  ETA: 0:01:11Loading IGWN HDF5 Files  35%|█████████▊                  |  ETA: 0:01:09Loading IGWN HDF5 Files  36%|██████████▏                 |  ETA: 0:01:08Loading IGWN HDF5 Files  37%|██████████▍                 |  ETA: 0:01:06Loading IGWN HDF5 Files  38%|██████████▊                 |  ETA: 0:01:04Loading IGWN HDF5 Files  40%|███████████▏                |  ETA: 0:01:02Loading IGWN HDF5 Files  41%|███████████▍                |  ETA: 0:01:02Loading IGWN HDF5 Files  42%|███████████▊                |  ETA: 0:01:01Loading IGWN HDF5 Files  43%|████████████                |  ETA: 0:01:00Loading IGWN HDF5 Files  44%|████████████▍               |  ETA: 0:00:59Loading IGWN HDF5 Files  45%|████████████▊               |  ETA: 0:00:58Loading IGWN HDF5 Files  47%|█████████████               |  ETA: 0:00:56Loading IGWN HDF5 Files  48%|█████████████▍              |  ETA: 0:00:55Loading IGWN HDF5 Files  49%|█████████████▋              |  ETA: 0:00:53Loading IGWN HDF5 Files  50%|██████████████              |  ETA: 0:00:52Loading IGWN HDF5 Files  51%|██████████████▍             |  ETA: 0:00:50Loading IGWN HDF5 Files  52%|██████████████▋             |  ETA: 0:00:49Loading IGWN HDF5 Files  53%|███████████████             |  ETA: 0:00:47Loading IGWN HDF5 Files  55%|███████████████▎            |  ETA: 0:00:45Loading IGWN HDF5 Files  56%|███████████████▋            |  ETA: 0:00:45Loading IGWN HDF5 Files  57%|████████████████            |  ETA: 0:00:44Loading IGWN HDF5 Files  58%|████████████████▎           |  ETA: 0:00:43Loading IGWN HDF5 Files  59%|████████████████▋           |  ETA: 0:00:42Loading IGWN HDF5 Files  60%|████████████████▉           |  ETA: 0:00:40Loading IGWN HDF5 Files  62%|█████████████████▎          |  ETA: 0:00:39Loading IGWN HDF5 Files  63%|█████████████████▋          |  ETA: 0:00:38Loading IGWN HDF5 Files  64%|█████████████████▉          |  ETA: 0:00:37Loading IGWN HDF5 Files  65%|██████████████████▎         |  ETA: 0:00:36Loading IGWN HDF5 Files  66%|██████████████████▌         |  ETA: 0:00:35Loading IGWN HDF5 Files  67%|██████████████████▉         |  ETA: 0:00:33Loading IGWN HDF5 Files  69%|███████████████████▎        |  ETA: 0:00:32Loading IGWN HDF5 Files  70%|███████████████████▌        |  ETA: 0:00:30Loading IGWN HDF5 Files  71%|███████████████████▉        |  ETA: 0:00:29Loading IGWN HDF5 Files  72%|████████████████████▏       |  ETA: 0:00:28Loading IGWN HDF5 Files  73%|████████████████████▌       |  ETA: 0:00:27Loading IGWN HDF5 Files  74%|████████████████████▉       |  ETA: 0:00:25Loading IGWN HDF5 Files  76%|█████████████████████▏      |  ETA: 0:00:24Loading IGWN HDF5 Files  77%|█████████████████████▌      |  ETA: 0:00:23Loading IGWN HDF5 Files  78%|█████████████████████▉      |  ETA: 0:00:22Loading IGWN HDF5 Files  79%|██████████████████████▏     |  ETA: 0:00:21Loading IGWN HDF5 Files  80%|██████████████████████▌     |  ETA: 0:00:20Loading IGWN HDF5 Files  81%|██████████████████████▊     |  ETA: 0:00:18Loading IGWN HDF5 Files  83%|███████████████████████▏    |  ETA: 0:00:17Loading IGWN HDF5 Files  84%|███████████████████████▌    |  ETA: 0:00:16Loading IGWN HDF5 Files  85%|███████████████████████▊    |  ETA: 0:00:16Loading IGWN HDF5 Files  86%|████████████████████████▏   |  ETA: 0:00:15Loading IGWN HDF5 Files  87%|████████████████████████▍   |  ETA: 0:00:14Loading IGWN HDF5 Files  88%|████████████████████████▊   |  ETA: 0:00:13Loading IGWN HDF5 Files  90%|█████████████████████████▏  |  ETA: 0:00:11Loading IGWN HDF5 Files  91%|█████████████████████████▍  |  ETA: 0:00:10Loading IGWN HDF5 Files  92%|█████████████████████████▊  |  ETA: 0:00:09Loading IGWN HDF5 Files  93%|██████████████████████████  |  ETA: 0:00:07Loading IGWN HDF5 Files  94%|██████████████████████████▍ |  ETA: 0:00:06Loading IGWN HDF5 Files  95%|██████████████████████████▊ |  ETA: 0:00:05Loading IGWN HDF5 Files  97%|███████████████████████████ |  ETA: 0:00:04Loading IGWN HDF5 Files  98%|███████████████████████████▍|  ETA: 0:00:02Loading IGWN HDF5 Files 100%|████████████████████████████| Time: 0:01:40
+┌ Warning: Could not read Nposts from /mnt/home/sroy1/GWTC4_35_m1m2z/no_pairing/m2_peak/scripts/../data/nposts_0.5.csv: ArgumentError("Cannot open '/mnt/home/sroy1/GWTC4_35_m1m2z/no_pairing/m2_peak/scripts/../data/nposts_0.5.csv': not a file")
+└ @ Main ~/GWTC4_35_m1m2z/no_pairing/m2_peak/scripts/run_mcmc.jl:121
+┌ Warning: Using default of 16 samples per event
+└ @ Main ~/GWTC4_35_m1m2z/no_pairing/m2_peak/scripts/run_mcmc.jl:122
+[ Info: Analyzing 115 events
+Sampling (4 processes)   0%|                            |  ETA: N/A
+Sampling (4 processes)  25%|███████                     |  ETA: 5:00:27
+Sampling (4 processes)  50%|██████████████              |  ETA: 1:40:31
+Sampling (4 processes)  75%|█████████████████████       |  ETA: 0:36:42
+Sampling (4 processes) 100%|████████████████████████████| Time: 2:22:50
+Sampling (4 processes) 100%|████████████████████████████| Time: 2:22:51
+[ Info: 4*N = 460
+[ Info: Minimum Neff_sel = 775.38
+[ Info: Minimum Neff_samps = 1.47 for event GW190630
+[ Info: Updating Nposts for event GW190413 from 16 to 32
+[ Info: Updating Nposts for event GW190513 from 16 to 32
+[ Info: Updating Nposts for event GW190517 from 16 to 32
+[ Info: Updating Nposts for event GW190519 from 16 to 32
+[ Info: Updating Nposts for event GW190527 from 16 to 32
+[ Info: Updating Nposts for event GW190602 from 16 to 32
+[ Info: Updating Nposts for event GW190630 from 16 to 32
+[ Info: Updating Nposts for event GW190701 from 16 to 32
+[ Info: Updating Nposts for event GW190719 from 16 to 32
+[ Info: Updating Nposts for event GW191109 from 16 to 32
+[ Info: Updating Nposts for event GW200209 from 16 to 32
+[ Info: Updating Nposts for event GW200216 from 16 to 32
+[ Info: Updating Nposts for event GW200302 from 16 to 32
+[ Info: Updating Nposts for event GW230624 from 16 to 32
+[ Info: Updating Nposts for event GW230630 from 16 to 32
+[ Info: Updating Nposts for event GW230702 from 16 to 32
+[ Info: Updating Nposts for event GW2307041 from 16 to 32
+[ Info: Updating Nposts for event GW230709 from 16 to 32
+[ Info: Updating Nposts for event GW230803 from 16 to 32
+[ Info: Updating Nposts for event GW230814 from 16 to 32
+[ Info: Updating Nposts for event GW230819 from 16 to 32
+[ Info: Updating Nposts for event GW230820 from 16 to 32
+[ Info: Updating Nposts for event GW230824 from 16 to 32
+[ Info: Updating Nposts for event GW230825 from 16 to 32
+[ Info: Updating Nposts for event GW2309271 from 16 to 32
+[ Info: Updating Nposts for event GW231004 from 16 to 32
+[ Info: Updating Nposts for event GW231005 from 16 to 32
+[ Info: Updating Nposts for event GW231008 from 16 to 32
+[ Info: Updating Nposts for event GW231113 from 16 to 32
+[ Info: Updating Nposts for event GW231119 from 16 to 32
+[ Info: Updating Nposts for event GW231127 from 16 to 32
+[ Info: Updating Nposts for event GW231129 from 16 to 32
+[ Info: Updating Nposts for event GW231221 from 16 to 32
+[ Info: Updating Nposts for event GW231230 from 16 to 32
+[ Info: Updating Nposts for event GW240107 from 16 to 32
+[ Info: Updated Nposts.  Writing to /mnt/home/sroy1/GWTC4_35_m1m2z/no_pairing/m2_peak/scripts/../data/nposts_0.5.csv = [16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 32, 16, 16, 16, 16, 32, 32, 32, 16, 32, 32, 16, 32, 32, 16, 32, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 32, 16, 16, 16, 16, 16, 16, 16, 16, 32, 32, 16, 16, 32, 16, 16, 16, 16, 16, 32, 16, 32, 32, 16, 32, 16, 16, 16, 32, 16, 16, 32, 16, 16, 16, 32, 16, 32, 32, 32, 32, 16, 16, 16, 16, 16, 16, 16, 16, 32, 16, 16, 16, 32, 32, 16, 32, 16, 16, 16, 16, 32, 16, 16, 16, 32, 32, 32, 16, 16, 16, 32, 16, 16, 32, 16, 16, 32, 16]
+[ Info: Looping again with updated Nposts!
+[ Info: Analyzing 115 events
+Sampling (4 processes)   0%|                            |  ETA: N/A
+Sampling (4 processes)  25%|███████                     |  ETA: 4:34:42
+Sampling (4 processes)  50%|██████████████              |  ETA: 1:50:57
+Sampling (4 processes)  75%|█████████████████████       |  ETA: 0:41:55
+Sampling (4 processes) 100%|████████████████████████████| Time: 2:05:59
+Sampling (4 processes) 100%|████████████████████████████| Time: 2:05:59
+[ Info: 4*N = 460
+[ Info: Minimum Neff_sel = 929.25
+[ Info: Minimum Neff_samps = 2.0 for event GW190719
+[ Info: Updating Nposts for event GW190527 from 32 to 64
+[ Info: Updating Nposts for event GW190719 from 32 to 64
+[ Info: Updating Nposts for event GW191127 from 16 to 32
+[ Info: Updating Nposts for event GW230630 from 32 to 64
+[ Info: Updating Nposts for event GW230702 from 32 to 64
+[ Info: Updating Nposts for event GW2307041 from 32 to 64
+[ Info: Updating Nposts for event GW230806 from 16 to 32
+[ Info: Updating Nposts for event GW230820 from 32 to 64
+[ Info: Updating Nposts for event GW230911 from 16 to 32
+[ Info: Updating Nposts for event GW231005 from 32 to 64
+[ Info: Updating Nposts for event GW231114 from 16 to 32
+[ Info: Updating Nposts for event GW240107 from 32 to 64
+[ Info: Updated Nposts.  Writing to /mnt/home/sroy1/GWTC4_35_m1m2z/no_pairing/m2_peak/scripts/../data/nposts_0.5.csv = [16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 32, 16, 16, 16, 16, 32, 32, 32, 16, 64, 32, 16, 32, 32, 16, 64, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 32, 32, 16, 16, 16, 16, 16, 16, 16, 32, 32, 16, 16, 32, 16, 16, 16, 16, 16, 32, 16, 64, 64, 16, 64, 16, 16, 16, 32, 16, 16, 32, 16, 32, 16, 32, 16, 32, 64, 32, 32, 16, 32, 16, 16, 16, 16, 16, 16, 32, 16, 16, 16, 32, 64, 16, 32, 16, 16, 16, 16, 32, 32, 16, 16, 32, 32, 32, 16, 16, 16, 32, 16, 16, 32, 16, 16, 64, 16]
+[ Info: Looping again with updated Nposts!
+[ Info: Analyzing 115 events
+Sampling (4 processes)   0%|                            |  ETA: N/A
+Sampling (4 processes)  25%|███████                     |  ETA: 5:05:24
+Sampling (4 processes)  50%|██████████████              |  ETA: 1:49:33
+Sampling (4 processes)  75%|█████████████████████       |  ETA: 0:39:03
+Sampling (4 processes) 100%|████████████████████████████| Time: 2:11:50
+Sampling (4 processes) 100%|████████████████████████████| Time: 2:11:50
+[ Info: 4*N = 460
+[ Info: Minimum Neff_sel = 739.68
+[ Info: Minimum Neff_samps = 1.59 for event GW230911
+[ Info: Updating Nposts for event GW190503 from 16 to 32
+[ Info: Updating Nposts for event GW190513 from 32 to 64
+[ Info: Updating Nposts for event GW190719 from 64 to 128
+[ Info: Updating Nposts for event GW190929 from 16 to 32
+[ Info: Updating Nposts for event GW200216 from 32 to 64
+[ Info: Updating Nposts for event GW230803 from 32 to 64
+[ Info: Updating Nposts for event GW230805 from 16 to 32
+[ Info: Updating Nposts for event GW230820 from 64 to 128
+[ Info: Updating Nposts for event GW230831 from 16 to 32
+[ Info: Updating Nposts for event GW230911 from 32 to 64
+[ Info: Updating Nposts for event GW230930 from 16 to 32
+[ Info: Updating Nposts for event GW2310051 from 16 to 32
+[ Info: Updating Nposts for event GW231119 from 32 to 64
+[ Info: Updating Nposts for event GW231127 from 32 to 64
+[ Info: Updating Nposts for event GW231230 from 32 to 64
+[ Info: Updated Nposts.  Writing to /mnt/home/sroy1/GWTC4_35_m1m2z/no_pairing/m2_peak/scripts/../data/nposts_0.5.csv = [16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 32, 16, 16, 32, 16, 64, 32, 32, 16, 64, 32, 16, 32, 32, 16, 128, 16, 16, 16, 16, 16, 16, 16, 16, 16, 32, 32, 32, 16, 16, 16, 16, 16, 16, 16, 32, 64, 16, 16, 32, 16, 16, 16, 16, 16, 32, 16, 64, 64, 16, 64, 16, 16, 16, 32, 16, 16, 64, 32, 32, 16, 32, 16, 32, 128, 32, 32, 32, 64, 16, 16, 16, 16, 16, 16, 32, 16, 32, 16, 32, 64, 32, 32, 16, 16, 16, 16, 32, 32, 16, 16, 64, 64, 32, 16, 16, 16, 32, 16, 16, 64, 16, 16, 64, 16]
+[ Info: Looping again with updated Nposts!
+[ Info: Analyzing 115 events
+Sampling (4 processes)   0%|                            |  ETA: N/A
+Sampling (4 processes)  25%|███████                     |  ETA: 4:58:24
+Sampling (4 processes)  50%|██████████████              |  ETA: 1:40:52
+Sampling (4 processes)  75%|█████████████████████       |  ETA: 0:34:36
+Sampling (4 processes) 100%|████████████████████████████| Time: 2:01:28
+Sampling (4 processes) 100%|████████████████████████████| Time: 2:01:28
+[ Info: 4*N = 460
+[ Info: Minimum Neff_sel = 797.12
+[ Info: Minimum Neff_samps = 3.76 for event GW230911
+[ Info: Updating Nposts for event GW190805 from 16 to 32
+[ Info: Updating Nposts for event GW230704 from 16 to 32
+[ Info: Updating Nposts for event GW230911 from 64 to 128
+[ Info: Updated Nposts.  Writing to /mnt/home/sroy1/GWTC4_35_m1m2z/no_pairing/m2_peak/scripts/../data/nposts_0.5.csv = [16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 32, 16, 16, 32, 16, 64, 32, 32, 16, 64, 32, 16, 32, 32, 16, 128, 16, 16, 16, 32, 16, 16, 16, 16, 16, 32, 32, 32, 16, 16, 16, 16, 16, 16, 16, 32, 64, 16, 16, 32, 16, 16, 16, 16, 16, 32, 16, 64, 64, 32, 64, 16, 16, 16, 32, 16, 16, 64, 32, 32, 16, 32, 16, 32, 128, 32, 32, 32, 128, 16, 16, 16, 16, 16, 16, 32, 16, 32, 16, 32, 64, 32, 32, 16, 16, 16, 16, 32, 32, 16, 16, 64, 64, 32, 16, 16, 16, 32, 16, 16, 64, 16, 16, 64, 16]
+[ Info: Looping again with updated Nposts!
+[ Info: Analyzing 115 events
+Sampling (4 processes)   0%|                            |  ETA: N/A
+Sampling (4 processes)  25%|███████                     |  ETA: 5:29:49
+Sampling (4 processes)  50%|██████████████              |  ETA: 1:57:42
+Sampling (4 processes)  75%|█████████████████████       |  ETA: 0:39:34
+Sampling (4 processes) 100%|████████████████████████████| Time: 2:01:55
+Sampling (4 processes) 100%|████████████████████████████| Time: 2:01:55
+[ Info: 4*N = 460
+[ Info: Minimum Neff_sel = 728.29
+[ Info: Minimum Neff_samps = 4.02 for event GW230609
+[ Info: No updates to Nposts
