@@ -355,7 +355,7 @@ end
 
     # Priors
     alphalm1 ~ Uniform(-50, 10)
-    alphamm1 ~ Uniform(-10, 10)
+    alphamm1 ~ Uniform(-10, 15)
     alphahm1 ~ Uniform(-10, 10)
     mbreakf1 ~ Uniform(20, 25)
     mbreaks1 ~ Uniform(30, 40)
@@ -370,8 +370,8 @@ end
     sigma_peak2 ~ Uniform(1, 10)
 
     lambda ~ Uniform(-10, 10)
-    zp ~ Uniform(0.1, 4)
-    kappa ~ Uniform(1, 20)
+    zp ~ Uniform(1, 4)
+    kappa ~ Uniform(3, 8)
 
     # Pop density
     log_dNdm1dqdVdt = make_log_dNdm1dqdVdt(alphalm1, alphamm1, alphahm1, mbreakf1, mbreaks1, log_rlm2, alphalm2, log_rhm2, alphahm2, mu_peak2, sigma_peak2, lambda, zp, kappa; mgrid=m_grid)

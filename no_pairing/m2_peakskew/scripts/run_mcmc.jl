@@ -17,7 +17,7 @@ s = ArgParseSettings()
     "--Nselection"
         help="Number of selection samples to use"
         arg_type=Int
-        default=100000
+        default=120000
     "--p-cut"
         help="minimal credible-level of posterior to include in catalog"
         arg_type=Float64
