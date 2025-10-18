@@ -371,24 +371,24 @@ end
 
     # Priors
     alphalm1 ~ Uniform(-50, 10)
-    alphamm1 ~ Uniform(-10, 10)
+    alphamm1 ~ Uniform(-5, 20)
     alphahm1 ~ Uniform(-10, 10)
     mbreakf1 ~ Uniform(20, 25)
-    mbreaks1 ~ Uniform(30, 40)
+    mbreaks1 ~ Uniform(30, 50)
     
     log_rlm2 ~ Uniform(log(0.01), log(0.5))
-    alphalm2 ~ Uniform(-10, 10)
+    alphalm2 ~ Uniform(-50, 10)
 
     log_rhm2 ~ Uniform(log(0.01), log(0.5))
-    alphahm2 ~ Uniform(0, 6)
+    alphahm2 ~ Uniform(-20, 30)
 
-    mu_peak2 ~ Uniform(25, 45)
-    sigma_peak2 ~ Uniform(1, 10)
+    mu_peak2 ~ Uniform(20, 45)
+    sigma_peak2 ~ Uniform(1, 15)
     k32 ~ Uniform(-10, 10)
 
     beta ~ Uniform(-50, 10)
 
-    lambda ~ Uniform(2, 10)
+    lambda ~ Uniform(-10, 10)
     zp ~ Uniform(1, 4)
     kappa ~ Uniform(3, 8)
 
