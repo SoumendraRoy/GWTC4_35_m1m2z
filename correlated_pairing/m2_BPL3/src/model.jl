@@ -377,7 +377,7 @@ end
     alphalm2 ~ Uniform(-50, 10)
     alphamm2 ~ Uniform(-20, -2)
     alphahm2 ~ Uniform(-10, 10)
-    mbreakf2 ~ Uniform(10, 25)
+    mbreakf2 ~ Uniform(10, 24)
     mbreaks2 ~ Uniform(25, 40)
 
     beta ~ Uniform(-15, 10)
