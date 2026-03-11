@@ -289,27 +289,51 @@ function make_combined_log_dNdm1(alphalm1, alphamm1, alphahm1, mbreakf1, mbreaks
     return log_dN
 end
 
+function make_combined_log_dNdm(log_rlm, alphalm, log_rhm, alphahm, mu_peak, sigma_peak, alpharight, mturn_right;
+     mgrid=collect(10:0.25:100),mnorm=35.0)
 
-function make_combined_log_dNdm(log_rlm, alphalm, log_rhm, alphahm, mu_peak, sigma_peak; mgrid=collect(10:0.25:100), mnorm=35.0)
-    log_dNdm = make_log_dNdm_peak_gridded(mgrid, mu_peak, sigma_peak)
-    log_dNdm_norm = log(mnorm) + log_dNdm(mnorm)
+    # Peak term (gridded)
+    log_dNdm_peak = make_log_dNdm_peak_gridded(mgrid, mu_peak, sigma_peak)
+    log_dNdm_norm = log(mnorm) + log_dNdm_peak(mnorm)
 
-    log_rlm1 = log_rlm + log_dNdm(mu_peak) - log_dNdm_norm
+    # Low-m and high-m components (your existing normalization convention)
+    log_rlm1 = log_rlm + log_dNdm_peak(mu_peak) - log_dNdm_norm
     log_dNdm_lm = make_log_dNdm_lm(log_rlm1, mu_peak, alphalm)
 
-    log_rhm1 = log_rhm + log_dNdm(mu_peak) - log_dNdm_norm
+    log_rhm1 = log_rhm + log_dNdm_peak(mu_peak) - log_dNdm_norm
     log_dNdm_hm = make_log_dNdm_hm(log_rhm1, mu_peak, alphahm)
 
-    function log_dN(m)
-        logaddexp(logaddexp(log_dNdm(m) - log_dNdm_norm, log_dNdm_lm(m)), log_dNdm_hm(m))
+    # Base (left) model: peak (normalized) + lm + hm
+    function log_dN_left(m::Real)
+        logaddexp(
+            logaddexp(log_dNdm_peak(m) - log_dNdm_norm, log_dNdm_lm(m)),
+            log_dNdm_hm(m),
+        )
     end
 
-    log_dN
+    # Continuity anchor at mturn
+    log_at_turn = log_dN_left(mturn_right)
+
+    # Right PL, normalized at mturn via the anchor above
+    function log_dN_right(m::Real)
+        return log_at_turn + alpharight * (log(m) - log(mturn_right))
+    end
+
+    # Final: piecewise with continuity at mturn
+    function log_dN(m::Real)
+        if m <= mturn_right
+            return log_dN_left(m)
+        else
+            return log_dN_right(m)
+        end
+    end
+
+    return log_dN
 end
 
-function make_log_dNdm1dqdVdt(alphalm1, alphamm1, alphahm1, mbreakf1, mbreaks1, log_rlm2, alphalm2, log_rhm2, alphahm2, mu_peak2, sigma_peak2, beta, lambda, zp, kappa; mgrid=collect(10:0.25:100), mnorm=35.0, qnorm=1.0, znorm=0.0)
+function make_log_dNdm1dqdVdt(alphalm1, alphamm1, alphahm1, mbreakf1, mbreaks1, log_rlm2, alphalm2, log_rhm2, alphahm2, mu_peak2, sigma_peak2, alpharight2, mturn_right2, beta, lambda, zp, kappa; mgrid=collect(10:0.25:100), mnorm=35.0, qnorm=1.0, znorm=0.0)
     log_dNdm_total1 = make_combined_log_dNdm1(alphalm1, alphamm1, alphahm1, mbreakf1, mbreaks1)
-    log_dNdm_total2 = make_combined_log_dNdm(log_rlm2, alphalm2, log_rhm2, alphahm2, mu_peak2, sigma_peak2; mgrid=mgrid, mnorm=mnorm)
+    log_dNdm_total2 = make_combined_log_dNdm(log_rlm2, alphalm2, log_rhm2, alphahm2, mu_peak2, sigma_peak2, alpharight2, mturn_right2; mgrid=mgrid, mnorm=mnorm)
     
     # These should be the values of the corresponding terms in the model at (mnorm, qnorm, znorm)
     log_znorm = log_mdsfr(znorm, lambda, zp, kappa)
@@ -380,17 +404,20 @@ end
     log_rhm2 ~ Uniform(log(0.01), log(0.5))
     alphahm2 ~ Uniform(0, 6)
 
-    mu_peak2 ~ Uniform(25, 45)
+    mu_peak2 ~ Uniform(25, 40)
     sigma_peak2 ~ Uniform(1, 10)
+
+    alpharight2 ~ Uniform(0, 10)
+    mturn_right2 ~ Uniform(41, 50)
 
     beta ~ Uniform(-50, 10)
 
     lambda ~ Uniform(-10, 10)
-    zp ~ Uniform(1, 4)
+    zp ~ Uniform(0.01, 4)
     kappa ~ Uniform(3, 8)
 
     # Pop density
-    log_dNdm1dqdVdt = make_log_dNdm1dqdVdt(alphalm1, alphamm1, alphahm1, mbreakf1, mbreaks1, log_rlm2, alphalm2, log_rhm2, alphahm2, mu_peak2, sigma_peak2, beta, lambda, zp, kappa; mgrid=m_grid)
+    log_dNdm1dqdVdt = make_log_dNdm1dqdVdt(alphalm1, alphamm1, alphahm1, mbreakf1, mbreaks1, log_rlm2, alphalm2, log_rhm2, alphahm2, mu_peak2, sigma_peak2, alpharight2, mturn_right2, beta, lambda, zp, kappa; mgrid=m_grid)
 
     function log_pop_density(theta)
         m1, q, z = theta

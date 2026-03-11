@@ -58,7 +58,7 @@ function Makie.plot!(kdecontour::KDEContour)
     contour!(kdecontour, xgrid, ygrid, z; levels=p_levels, kdecontour.attributes...)
 end
 
-population_params = [:R, :alphalm1, :alphamm1, :alphahm1, :mbreakf1, :mbreaks1, :rlm2, :alphalm2, :rhm2, :alphahm2, :mu_peak2, :sigma_peak2, :lambda, :zp, :kappa, :Neff_sel]
+population_params = [:R, :alphalm1, :alphamm1, :alphahm1, :mbreakf1, :mbreaks1, :rlm2, :alphalm2, :rhm2, :alphahm2, :mu_peak2, :sigma_peak2, :alpharight2, :mturn_right2, :lambda, :zp, :kappa, :Neff_sel]
 cosmo_params = [:h, :Ω_M]
 function traceplot(trace; params=population_params)
     f = Figure(size=(800,2400))
@@ -87,7 +87,7 @@ function log_dNdm_from_chain_sample(trace, draw, chain; mgrid=10:0.25:100)
     d = draw
     c = chain
 
-    BumpCosmologyGWTC3.make_combined_log_dNdm(p.alphalm1[draw=d, chain=c], p.alphamm1[draw=d, chain=c], p.alphahm1[draw=d, chain=c], p.mbreakf1[draw=d, chain=c], p.mbreaks1[draw=d, chain=c], p.log_rlm2[draw=d, chain=c], p.alphalm2[draw=d, chain=c], p.log_rhm2[draw=d, chain=c], p.alphahm2[draw=d, chain=c], p.mu_peak2[draw=d, chain=c], p.sigma_peak2[draw=d, chain=c]; mgrid=mgrid)
+    BumpCosmologyGWTC3.make_combined_log_dNdm(p.alphalm1[draw=d, chain=c], p.alphamm1[draw=d, chain=c], p.alphahm1[draw=d, chain=c], p.mbreakf1[draw=d, chain=c], p.mbreaks1[draw=d, chain=c], p.log_rlm2[draw=d, chain=c], p.alphalm2[draw=d, chain=c], p.log_rhm2[draw=d, chain=c], p.alphahm2[draw=d, chain=c], p.mu_peak2[draw=d, chain=c], p.sigma_peak2[draw=d, chain=c], p.alpharight2[draw=d, chain=c], p.mturn_right2[draw=d, chain=c]; mgrid=mgrid)
 end
 
 function log_dN_from_chain_sample(trace, draw, chain)
@@ -95,7 +95,7 @@ function log_dN_from_chain_sample(trace, draw, chain)
     d = draw
     c = chain
 
-    log_dN = BumpCosmologyGWTC3.make_log_dNdm1dqdVdt(p.alphalm1[draw=d, chain=c], p.alphamm1[draw=d, chain=c], p.alphahm1[draw=d, chain=c], p.mbreakf1[draw=d, chain=c], p.mbreaks1[draw=d, chain=c], p.log_rlm2[draw=d, chain=c], p.alphalm2[draw=d, chain=c], p.log_rhm2[draw=d, chain=c], p.alphahm2[draw=d, chain=c], p.mu_peak2[draw=d, chain=c], p.sigma_peak2[draw=d, chain=c], p.lambda[draw=d, chain=c], p.zp[draw=d, chain=c], p.kappa[draw=d, chain=c])
+    log_dN = BumpCosmologyGWTC3.make_log_dNdm1dqdVdt(p.alphalm1[draw=d, chain=c], p.alphamm1[draw=d, chain=c], p.alphahm1[draw=d, chain=c], p.mbreakf1[draw=d, chain=c], p.mbreaks1[draw=d, chain=c], p.log_rlm2[draw=d, chain=c], p.alphalm2[draw=d, chain=c], p.log_rhm2[draw=d, chain=c], p.alphahm2[draw=d, chain=c], p.mu_peak2[draw=d, chain=c], p.sigma_peak2[draw=d, chain=c], p.alpharight2[draw=d, chain=c], p.mturn_right2[draw=d, chain=c], p.lambda[draw=d, chain=c], p.zp[draw=d, chain=c], p.kappa[draw=d, chain=c])
     log_dN
 end
 
