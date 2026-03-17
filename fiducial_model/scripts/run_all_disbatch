@@ -1,0 +1,1 @@
+julia run_mcmc.jl --p-cut 0.5 > ../data/run_0.5.out 2> ../data/run_0.5.err
